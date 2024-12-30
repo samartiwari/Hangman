@@ -103,7 +103,7 @@ class _MyGameState extends State<MyGame> {
       backgroundColor: const Color(0xfffffdec),
       body: Column(
         children: [
-          const SizedBox(height: 120,),
+          const SizedBox(height: 85,),
           SizedBox(
             width: 212,
             child: Align(
@@ -113,7 +113,7 @@ class _MyGameState extends State<MyGame> {
                 )
             ),
           ),
-          const SizedBox(height: 35,),
+          const SizedBox(height: 30,),
           Align(
             alignment: Alignment.center,
             child: SizedBox(
@@ -130,8 +130,9 @@ class _MyGameState extends State<MyGame> {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 50,right: 50,),
-            child: SizedBox(
-              height: 250,
+            child:Container(
+              //color: Colors.grey,
+              height: 215,
                 child: Keyboard(
                   clicked: onClicked ,
                   buttonColors: clickedLetters,
@@ -145,8 +146,8 @@ class _MyGameState extends State<MyGame> {
                 GestureDetector(
                   onTap: ()=>onClicked("y"),
                   child: Container(
-                    height: 44,
-                    width: 44,
+                    height: 39,
+                    width: 39,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
                       color: clickedLetters[24],
@@ -158,8 +159,8 @@ class _MyGameState extends State<MyGame> {
                 GestureDetector(
                   onTap: ()=>onClicked("z"),
                   child: Container(
-                    height: 44,
-                    width: 44,
+                    height: 39,
+                    width: 39,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
                       color: clickedLetters[25],
@@ -169,7 +170,7 @@ class _MyGameState extends State<MyGame> {
                 ),
               ]
           ),
-          SizedBox(height: 10,),
+          SizedBox(height: 30,),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
